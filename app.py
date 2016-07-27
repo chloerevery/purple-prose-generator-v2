@@ -19,7 +19,9 @@ def home():
         # 4. For each value in map
         		# StringToAppendToPurplifiedProse <-- value
         		# Result = result of call to thesaurus api
-        		# If result != null
+	        		# For now, assume all words are nouns if thesaurus api returns an array of noun synonyms
+	        		# Later: integrate sentence parsing API to determine likely part of speech of each word
+        		# If result.nouns != null
         			# Iterate through result, return longest synonym
         			# (Stretch) use map to mimic original punctuation and case
         			# StringToAppendToPurplifiedProse --> longest synonym
